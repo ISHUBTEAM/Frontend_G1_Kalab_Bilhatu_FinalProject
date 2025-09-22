@@ -1,0 +1,60 @@
+
+.mentors-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+}
+.mentors-section h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #00bcd4;
+}
+.mentors-section input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.mentors-section button {
+  padding: 8px 16px;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+.mentor-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.mentor-card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.mentor-details h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+.mentor-details p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #cccccc;
+}
+.mentor-details strong {
+  color: #00bcd4;
+}

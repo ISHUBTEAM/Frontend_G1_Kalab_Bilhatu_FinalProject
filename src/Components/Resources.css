@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+p {
+  margin: 0.5rem 0;
+}
+.resources-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+/* Search Bar */
+.search-bar {
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  max-width: 300px;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.filter-bar button {
+  padding: 0.5rem 1rem;
+  background-color: #1e1e1e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.filter-bar button:hover {
+  background-color: #333;
+}
+.filter-bar .active {
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
+}
+section {
+  margin-bottom: 3rem;
+}
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+.resource-card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+.resource-card:hover {
+  transform: scale(1.2);
+}
+.icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.tags {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+.tag {
+  background-color: #333;
+  color: #00ffff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.mentor-card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: transform 0.2s ease;
+}
+
+.mentor-card:hover {
+  transform: scale(1.1);
+}
+
+.book-cover {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.mentor-info {
+  flex: 1;
+}
+
+.mentor-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.mentor-info p {
+  font-size: 0.9rem;
+  color: #ccc;
+}

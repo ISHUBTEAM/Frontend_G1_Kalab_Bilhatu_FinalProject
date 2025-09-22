@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #023e8e ,#02173e);
+  color: white;
+}
+
+/* Container */
+.community-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.islogo{
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.search input {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+/* profile pic of users */
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.tabs button {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.tabs button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Posts Section */
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.post {
+  display: flex;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 1rem;
+  align-items: flex-start;
+}
+
+.post img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content h2 {
+  font-size: 1rem;
+  margin: 0 0 0.4rem;
+}
+
+.content p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 0.6rem;
+}
+
+.info {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
