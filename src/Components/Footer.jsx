@@ -6,16 +6,16 @@ import { FaLinkedin, FaYoutube, FaTelegram } from 'react-icons/fa';
 function Footer() {
   return (
     <footer className="footer">
-      <div className="container">
-        {/* Logo Section */}
-        <div className="logo">
-          <img src={logo} alt="islogo" />
-          <h2 className="name">Ishub Frontend</h2>
+      <div className="footer-container">
+        {/* Branding */}
+        <div className="footer-brand">
+          <img src={logo} alt="IS Hub Logo" />
+          <h2>IShub Frontend</h2>
         </div>
 
-        {/* Links Section */}
-        <div className="links">
-          <div className="column">
+        {/* Navigation Links */}
+        <div className="footer-links">
+          <div className="footer-column">
             <h4>About</h4>
             <ul>
               <li><a href="/Mentors">Mentors</a></li>
@@ -23,39 +23,38 @@ function Footer() {
               <li><a href="/Community">Announcements</a></li>
             </ul>
           </div>
-          <div className="column">
+          <div className="footer-column">
             <h4>Resources</h4>
             <ul>
               <li><a href="/Courses">Courses</a></li>
-              <li><a href="/">Home</a></li>
-              <li><a href="/Resources">Resources</a></li>
+              <li><a href="/Resources">Guides</a></li>
+              <li><a href="/Resources">Tools</a></li>
             </ul>
           </div>
-          <div className="column">
+          <div className="footer-column">
             <h4>Support</h4>
             <ul>
               <li><a href="/Courses">Help Center</a></li>
               <li><a href="/">FAQs</a></li>
-              <li><a href="/Resources">Contact Us</a></li>
+              <li><a href="/Resources">Contact</a></li>
             </ul>
           </div>
         </div>
 
-        {/* Social */}
-        <div className="social">
-            <h4>Social</h4>
-            <ul className="social-icons">
-                <li><a href="https://www.linkedin.com/company/information-system-hub/?viewAsMember=true"><FaLinkedin /></a></li>
-                <li><a href="https://www.youtube.com/@InformationSystemTalks"><FaYoutube /></a></li>
-                <li><a href="https://t.me/InformationSystemsHub"><FaTelegram /></a></li>
-            </ul>
-            </div>
-
+        {/* Social Media */}
+        <div className="footer-social">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/company/information-system-hub/" target="_blank"><FaLinkedin /></a></li>
+            <li><a href="https://www.youtube.com/@InformationSystemTalks" target="_blank"><FaYoutube /></a></li>
+            <li><a href="https://t.me/InformationSystemsHub" target="_blank"><FaTelegram /></a></li>
+          </ul>
+        </div>
       </div>
 
       {/* Copyright */}
-      <div className="copyright">
-        <p>&copy; 2025 IS Hub Frontend. All rights reserved</p>
+      <div className="footer-bottom">
+        <p>&copy; {new Date().getFullYear()}  IShub Frontend. All rights reserved.</p>
       </div>
     </footer>
   );

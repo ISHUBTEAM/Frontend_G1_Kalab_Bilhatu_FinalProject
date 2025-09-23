@@ -55,6 +55,30 @@
   font-size: 0.85rem;
   color: #bbb;
 }
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+.quiz-btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  animation: shake 1s infinite;
+  transition: background-color 0.3s ease;
+}
+.take-quiz-btn:hover {
+  background-color: #0090cc;
+}
+
 .progress-section {
   flex: 2 1 600px;
   display: flex;

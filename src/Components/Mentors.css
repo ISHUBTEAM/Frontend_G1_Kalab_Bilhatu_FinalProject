@@ -1,49 +1,52 @@
-
 .mentors-section {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 24px;
-  background-color: #121212;
-  color: #f0f0f0;
+  padding: 32px;
+  background-color: #02357d;
+  color: #f1f5f9;
   font-family: 'Segoe UI', sans-serif;
 }
 .mentors-section h2 {
-  font-size: 28px;
-  margin-bottom: 16px;
-  color: #00bcd4;
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: #38bdf8;
+  text-align: center;
 }
 .mentors-section input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 16px;
+  width: 50%;
+  padding: 12px;
+  margin-bottom: 24px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   background-color: #1e1e1e;
   color: #fff;
+  font-size: 16px;
 }
-.mentors-section button {
-  padding: 8px 16px;
-  background-color: #00bcd4;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-bottom: 24px;
+.mentor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
 }
 .mentor-card {
-  background-color: #1e1e1e;
+  background-color: #1e293b;
   border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 20px;
+  padding: 20px;
   display: flex;
-  align-items: center;
   gap: 16px;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.mentor-card:hover {
+  transform: translateY(-5px);
 }
 .mentor-card img {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  border-radius: 16px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
+  border: 3px solid #38bdf8;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+  transition: transform 0.3s ease;
 }
 .mentor-details h3 {
   margin: 0;
@@ -53,8 +56,13 @@
 .mentor-details p {
   margin: 4px 0;
   font-size: 14px;
-  color: #cccccc;
+  color: #cbd5e1;
 }
 .mentor-details strong {
-  color: #00bcd4;
+  color: #38bdf8;
+}
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  color: #94a3b8;
 }

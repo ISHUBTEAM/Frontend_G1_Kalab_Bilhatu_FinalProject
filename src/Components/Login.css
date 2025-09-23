@@ -133,4 +133,34 @@ input[type="checkbox"]{
 }
 .googleicon,.microsofticon{
     margin-right: 0.5rem;
+} 
+/* responsive design for login page */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    overflow: auto;
+  }
+  .login-card {
+    flex: none;
+    width: 100%;
+    padding: 1.5rem;
+    border-bottom: 1px solid #ccc;
+  }
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+  .submit-form {
+    flex: none;
+    width: 100%;
+    padding: 2rem;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons button {
+    width: 100%;
+    justify-content: center;
+  }
 }
