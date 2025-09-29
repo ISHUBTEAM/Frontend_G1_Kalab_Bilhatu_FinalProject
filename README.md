@@ -33,3 +33,13 @@ npm run dev
 Open your browser and go to:
 
 http://localhost:5173/
+
+Results:
+login/logout: 18/20,
+youtube integration: 15/20,
+filte + search: 20/20,
+ui/ux: 15/20,
+responsive: 10/10,
+folder structure: 8/10
+
+total: 86/100
